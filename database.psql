@@ -1,5 +1,5 @@
 -- Customers table
-CREATE TABLE customers (
+CREATE TABLE public.customers (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   user_id UUID REFERENCES auth.users(id),
   first_name TEXT NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE customers (
 );
 
 -- Banks table
-CREATE TABLE banks (
+CREATE TABLE public.banks (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   customer_id UUID REFERENCES customers(id),
   plaid_access_token TEXT NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE banks (
 );
 
 -- Transactions table
-CREATE TABLE transactions (
+CREATE TABLE public.transactions (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   customer_id UUID REFERENCES customers(id),
   bank_id UUID REFERENCES banks(id),
