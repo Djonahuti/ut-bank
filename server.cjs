@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const { Configuration, PlaidApi, PlaidEnvironments } = require('plaid')
 const Dwolla = require('dwolla-v2')
