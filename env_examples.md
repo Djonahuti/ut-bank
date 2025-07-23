@@ -1,0 +1,11 @@
+VITE_PUBLIC_SUPABASE_URL=your-supabase-url
+VITE_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+VITE_PLAID_CLIENT_ID=your_client_id_here
+VITE_PLAID_SECRET=your_secret_here
+VITE_PLAID_ENV=sandbox
+VITE_PLAID_PRODUCTS=transactions,auth,identity
+VITE_PLAID_COUNTRY_CODES=US,CA,GB
+VITE_DWOLLA_KEY=your_dwolla_key_here
+VITE_DWOLLA_SECRET=your_dwolla_secret_here
+VITE_DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
+VITE_DWOLLA_ENV=sandbox
